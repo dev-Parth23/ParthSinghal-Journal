@@ -13,6 +13,21 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <!-- OWL Carousel -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- Font Awesome CDN-->
     <link
       rel="stylesheet"
@@ -29,6 +44,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
   </head>
+
   <body>
     <!-- Top Navbar -->
     <div id="header">
@@ -225,18 +241,7 @@
     <div id="tabBar">
       <div class="container">
         <div class="tabsleft">
-          <div
-            style="
-              display: flex;
-              gap: 0.4em;
-              background-color: #fdd32f;
-              padding: 0 0.9em;
-              height: 100%;
-              align-items: center;
-              color: black;
-              font-weight: 500;
-            "
-          >
+          <div id="highlight">
             <div>
               <i
                 class="fa-solid fa-align-left"
@@ -284,12 +289,73 @@
     </div>
     <!-- Main -->
     <div id="Main">
-      <div id="left">
-        <img
-          src="https://images.pexels.com/photos/1089440/pexels-photo-1089440.jpeg?auto=compress&cs=tinysrgb&w=400"
-          alt=""
-        />
+      <div id="left" class="owl-carousel owl-theme" style="position: relative">
+        <div class="item">
+          <img
+            src="https://images.pexels.com/photos/1089440/pexels-photo-1089440.jpeg?auto=compress&cs=tinysrgb&w=400"
+            alt=""
+          />
+        </div>
+        <div class="item">
+          <img
+            src="https://images.pexels.com/photos/1089440/pexels-photo-1089440.jpeg?auto=compress&cs=tinysrgb&w=400"
+            alt=""
+          />
+        </div>
+        <div class="item">
+          <img
+            src="https://images.pexels.com/photos/1089440/pexels-photo-1089440.jpeg?auto=compress&cs=tinysrgb&w=400"
+            alt=""
+          />
+        </div>
+        <div class="item">
+          <img
+            src="https://images.pexels.com/photos/1089440/pexels-photo-1089440.jpeg?auto=compress&cs=tinysrgb&w=400"
+            alt=""
+          />
+        </div>
+        <div class="item">
+          <img
+            src="https://images.pexels.com/photos/1089440/pexels-photo-1089440.jpeg?auto=compress&cs=tinysrgb&w=400"
+            alt=""
+          />
+        </div>
+        <div class="item">
+          <img
+            src="https://images.pexels.com/photos/1089440/pexels-photo-1089440.jpeg?auto=compress&cs=tinysrgb&w=400"
+            alt=""
+          />
+        </div>
+        <div class="item">
+          <img
+            src="https://images.pexels.com/photos/1089440/pexels-photo-1089440.jpeg?auto=compress&cs=tinysrgb&w=400"
+            alt=""
+          />
+        </div>
+        <div class="item">
+          <img
+            src="https://images.pexels.com/photos/1089440/pexels-photo-1089440.jpeg?auto=compress&cs=tinysrgb&w=400"
+            alt=""
+          />
+        </div>
       </div>
+      <button
+        style="
+          position: absolute;
+          display: flex;
+          gap: 15px;
+          background-color: white;
+          padding: 0.5em 0.8em;
+          left: 10%;
+          top: 80%;
+          border-radius: 0.3em;
+          border: none;
+          z-index: 100;
+        "
+      >
+        <span>LEARN MORE</span
+        ><span><i class="fa-solid fa-arrow-right"></i></span>
+      </button>
 
       <div id="Right">
         <div id="top">
@@ -306,6 +372,512 @@
         </div>
       </div>
     </div>
+    <!-- Banner -->
+    <div id="Banner" style="display: flex">
+      <div id="BannerContent" style="display: flex; align-items: center">
+        <i class="fa-solid fa-truck-fast"></i>
+        <div>
+          <h6 id="title">Free Shipping</h6>
+          <h6 id="subtitle">Free delivery over $100</h6>
+        </div>
+      </div>
+      <div id="BannerContent" style="display: flex; align-items: center">
+        <i class="fa-solid fa-truck-fast"></i>
+        <div>
+          <h6 id="title">Free Returns</h6>
+          <h6 id="subtitle">Hassle free returns</h6>
+        </div>
+      </div>
+      <div id="BannerContent" style="display: flex; align-items: center">
+        <i class="fa-solid fa-truck-fast"></i>
+        <div>
+          <h6 id="title">Secure Shopping</h6>
+          <h6 id="subtitle">Best security features</h6>
+        </div>
+      </div>
+      <div id="BannerContent" style="display: flex; align-items: center">
+        <i class="fa-solid fa-truck-fast"></i>
+        <div>
+          <h6 id="title">Unlimited Blocks</h6>
+          <h6 id="subtitle">Any content, any page</h6>
+        </div>
+      </div>
+    </div>
+    <!-- Why buy from us? -->
+    <div class="HEADING">
+      <h2>Why buy from us?</h2>
+      <hr
+        style="
+          width: 5%;
+          text-align: left;
+          margin: 0;
+          height: 3px;
+          color: orangered;
+          background-color: orangered;
+        "
+      />
+      <p>
+        Journal has been the best selling and most loved Opencart theme since
+        first launch in 2013. Tried and tested by over 20K people, Journal<br />
+        is the best Opencart theme framework on the market today.
+        <a href="/">Learn more</a>
+      </p>
+      <!-- Tags -->
+      <div class="btn-group">
+        <div class="category-btn d-flex">
+          <button
+            type="button"
+            style="position: relative"
+            class="bt btn-primary"
+          >
+            TOP CATEGORIES
+          </button>
+          <i
+            style="position: absolute; left: 16%; top: 85%; color: #0e68e7"
+            class="fa-sharp fa-solid fa-caret-down"
+          ></i>
+        </div>
+        <button type="button" class="btn btn-primary">ELECTRONICS</button>
+        <button type="button" class="btn btn-primary">BEAUTY</button>
+        <button type="button" class="btn btn-primary">FASHION</button>
+      </div>
+      <!-- Carousel -->
+      <div
+        id="cards"
+        style="
+          display: flex;
+          margin-top: 2rem;
+          gap: 10px;
+          height: 20rem;
+          width: 90%;
+          overflow-x: auto;
+          overflow-y: hidden;
+        "
+      >
+        <div
+          class="card"
+          style="
+            overflow-y: hidden;
+            height: 280px;
+            border-radius: 8px;
+            overflow: hidden;
+            flex-shrink: 0;
+            width: 18%;
+            display: flex;
+            box-shadow: none;
+            position: relative;
+          "
+        >
+          <img
+            src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg"
+            style="object-fit: cover; width: 100%; height: 100%"
+            alt=""
+          />
+          <button
+            style="
+              position: absolute;
+              bottom: 0%;
+              left: 50%;
+              transform: translate(-50%, -15%);
+              padding: 5px 8px;
+              border-radius: 4px;
+              border: 1px solid gray;
+              background-color: white;
+            "
+          >
+            FASHION
+          </button>
+        </div>
+        <div
+          class="card"
+          style="
+            overflow-y: hidden;
+            height: 280px;
+            border-radius: 8px;
+            overflow: hidden;
+            flex-shrink: 0;
+            width: 18%;
+            display: flex;
+            box-shadow: none;
+            position: relative;
+          "
+        >
+          <img
+            src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg"
+            style="object-fit: cover; width: 100%; height: 100%"
+            alt=""
+          />
+          <button
+            style="
+              position: absolute;
+              bottom: 0%;
+              left: 50%;
+              transform: translate(-50%, -15%);
+              padding: 5px 8px;
+              border-radius: 4px;
+              border: 1px solid gray;
+              background-color: white;
+            "
+          >
+            FASHION
+          </button>
+        </div>
+        <div
+          class="card"
+          style="
+            overflow-y: hidden;
+            height: 280px;
+            border-radius: 8px;
+            overflow: hidden;
+            flex-shrink: 0;
+            width: 18%;
+            display: flex;
+            box-shadow: none;
+            position: relative;
+          "
+        >
+          <img
+            src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg"
+            style="object-fit: cover; width: 100%; height: 100%"
+            alt=""
+          />
+          <button
+            style="
+              position: absolute;
+              bottom: 0%;
+              left: 50%;
+              transform: translate(-50%, -15%);
+              padding: 5px 8px;
+              border-radius: 4px;
+              border: 1px solid gray;
+              background-color: white;
+            "
+          >
+            FASHION
+          </button>
+        </div>
+        <div
+          class="card"
+          style="
+            overflow-y: hidden;
+            height: 280px;
+            border-radius: 8px;
+            overflow: hidden;
+            flex-shrink: 0;
+            width: 18%;
+            display: flex;
+            box-shadow: none;
+            position: relative;
+          "
+        >
+          <img
+            src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg"
+            style="object-fit: cover; width: 100%; height: 100%"
+            alt=""
+          />
+          <button
+            style="
+              position: absolute;
+              bottom: 0%;
+              left: 50%;
+              transform: translate(-50%, -15%);
+              padding: 5px 8px;
+              border-radius: 4px;
+              border: 1px solid gray;
+              background-color: white;
+            "
+          >
+            FASHION
+          </button>
+        </div>
+        <div
+          class="card"
+          style="
+            overflow-y: hidden;
+            height: 280px;
+            border-radius: 8px;
+            overflow: hidden;
+            flex-shrink: 0;
+            width: 18%;
+            display: flex;
+            box-shadow: none;
+            position: relative;
+          "
+        >
+          <img
+            src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg"
+            style="object-fit: cover; width: 100%; height: 100%"
+            alt=""
+          />
+          <button
+            style="
+              position: absolute;
+              bottom: 0%;
+              left: 50%;
+              transform: translate(-50%, -15%);
+              padding: 5px 8px;
+              border-radius: 4px;
+              border: 1px solid gray;
+              background-color: white;
+            "
+          >
+            FASHION
+          </button>
+        </div>
+        <div
+          class="card"
+          style="
+            overflow-y: hidden;
+            height: 280px;
+            border-radius: 8px;
+            overflow: hidden;
+            flex-shrink: 0;
+            width: 18%;
+            display: flex;
+            box-shadow: none;
+            position: relative;
+          "
+        >
+          <img
+            src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg"
+            style="object-fit: cover; width: 100%; height: 100%"
+            alt=""
+          />
+          <button
+            style="
+              position: absolute;
+              bottom: 0%;
+              left: 50%;
+              transform: translate(-50%, -15%);
+              padding: 5px 8px;
+              border-radius: 4px;
+              border: 1px solid gray;
+              background-color: white;
+            "
+          >
+            FASHION
+          </button>
+        </div>
+        <div
+          class="card"
+          style="
+            overflow-y: hidden;
+            height: 280px;
+            border-radius: 8px;
+            overflow: hidden;
+            flex-shrink: 0;
+            width: 18%;
+            display: flex;
+            box-shadow: none;
+            position: relative;
+          "
+        >
+          <img
+            src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg"
+            style="object-fit: cover; width: 100%; height: 100%"
+            alt=""
+          />
+          <button
+            style="
+              position: absolute;
+              bottom: 0%;
+              left: 50%;
+              transform: translate(-50%, -15%);
+              padding: 5px 8px;
+              border-radius: 4px;
+              border: 1px solid gray;
+              background-color: white;
+            "
+          >
+            FASHION
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    
+
+    <!-- Featured Products -->
+    <div class="HEADING" id="Products">
+      <h2>Featured Products</h2>
+      <hr style="width: 5%; text-align: left; margin: 0;height: 3px; color: orangered; background-color: orangered;"/>
+      <p>Display any products as tabs or accordions with optional grid or carousel mode. Custom products per module and per breakpoint.<br />
+        Each module can display products in either grid or list view with different styles per module.</p>
+      <!-- Tags -->
+      <div class="btn-group">
+        <div class="category-btn d-flex">
+          <button
+            type="button"
+            style="position: relative"
+            class="bt btn-primary"
+          >
+            FEATURED
+          </button>
+          <i
+            style="position: absolute; left: 16%; top: 85%; color: #0e68e7"
+            class="fa-sharp fa-solid fa-caret-down"
+          ></i>
+        </div>
+        <button type="button" class="btn btn-primary">LATEST</button>
+        <button type="button" class="btn btn-primary">BESTSELLERS</button>
+        <button type="button" class="btn btn-primary">SPECIALS</button>
+      </div>
+
+      <!-- Carousel -->
+        <div class="Featured-card">
+          <img
+            style="width: 100%; height: 50%; object-fit: cover"
+            src="https://images.pexels.com/photos/2346006/pexels-photo-2346006.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=1&w=500"
+          />
+
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              background: #f0f0f0;
+              padding: 5px 10px;
+              font-size: 14px;
+              color: gray;
+            "
+          >
+            <p style="margin: 0">Ericksson</p>
+            <p style="margin: 0">Model 519</p>
+          </div>
+
+          <div style="text-align: left; padding: 3px 0 0 8px">
+            <h5 style="margin: 5px 0; font-size: 18px; font-weight: bold">
+              Headphones
+            </h5>
+            <p style="margin: 5px 0; font-size: 16px; color: black">
+              $999.00
+              <span
+                style="
+                  text-decoration: line-through;
+                  color: gainsboro;
+                  font-size: 14px;
+                  margin-left: 5px;
+                "
+                >$3,299.00</span
+              >
+            </p>
+          </div>
+          <!-- Functions -->
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              padding: 13px;
+            "
+          >
+            <!-- Add to cart -->
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 14px;
+                width: 60%;
+              "
+            >
+              <span style="display: flex; align-items: center">
+                <p style="border: 1px solid gray; padding: 2px 8px">1</p>
+                <span style="border: 1px solid gray; padding: 2px 4px">
+                  <i class="fa-solid fa-arrows-up-down"></i>
+                </span>
+              </span>
+              <button
+                style="
+                  background-color: #007bff;
+                  color: white;
+                  padding: 6px 14px;
+                  border: none;
+                  border-radius: 5px;
+                  text-wrap: nowrap;
+                "
+              >
+                Add To Cart
+              </button>
+            </div>
+            <!-- Functional Icons -->
+            <div style="display: flex; gap: 10px">
+              <i
+                class="fa-regular fa-heart"
+                style="
+                  font-size: 18px;
+                  color: gray;
+                  cursor: pointer;
+                  transition: color 0.3s;
+                "
+              ></i>
+              <i
+                class="fa-solid fa-arrow-right-arrow-left"
+                style="font-size: 18px; color: gray; cursor: pointer"
+              ></i>
+            </div>
+          </div>
+          <div
+            style="
+              padding: 10px;
+              display: flex;
+              justify-content: space-between;
+              background-color: gainsboro;
+              align-items: center;
+            "
+          >
+            <p
+              style="
+                font-family: sans-serif;
+                font-size: 14px;
+                color: black;
+                font-weight: 400;
+              "
+            >
+              <i style="color: green" class="fa-solid fa-dollar-sign"></i>Buy
+              Now
+            </p>
+            <p
+              style="
+                font-family: sans-serif;
+                font-size: 14px;
+                color: black;
+                font-weight: 400;
+              "
+            >
+              <i style="color: red" class="fa-regular fa-circle-question"></i
+              >Question
+            </p>
+          </div>
+        </div>
+      <button
+        style="
+          margin-top: 15px;
+          color: white;
+          background-color: #007bff;
+          border: none;
+          padding: 6px 12px;
+          border-radius: 2px;
+        "
+      >
+        See all products <i class="fa-solid fa-arrow-right"></i>
+      </button>
+    </div>
+
+
+
+
+
+
+
+
 
     <!-- Script tags -->
     <script
@@ -313,8 +885,20 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script src="jquery.min.js"></script>
-    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <!-- JQuery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- OWL Carousel CDN -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="script.js"></script>
   </body>
 </html>

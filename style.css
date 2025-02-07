@@ -3,11 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   height: 100%;
   width: 100%;
   background-color: white;
 }
+
 ::-webkit-scrollbar {
   display: none;
 }
@@ -17,7 +19,6 @@ body {
   max-width: 90%;
   margin: 0 auto;
 }
-
 /* Header top */
 #header #top {
   width: 100%;
@@ -144,9 +145,19 @@ body {
   font-weight: 500;
   font-size: medium;
 }
+.tabsleft #highlight {
+  display: flex;
+  gap: 0.4em;
+  background-color: #fdd32f;
+  padding: 0 0.9em;
+  height: 100%;
+  align-items: center;
+  color: black;
+  font-weight: 500;
+}
 /* Left side */
 #tabBar .container .tabsleft {
-  background-color:#0d51d6;
+  background-color: #0d51d6;
   width: 50%;
   display: flex;
   justify-content: space-between;
@@ -154,55 +165,168 @@ body {
   height: 100%;
   padding: 0%;
 }
+
 /* right side */
 #tabBar .container .tabsright {
-    background-color: #0d51d6;
+  background-color: #0d51d6;
   display: flex;
-    width: 20%;
- justify-content: space-evenly;
+  width: 20%;
+  justify-content: space-evenly;
   align-items: center;
   gap: 2em;
 }
 
 /* MAIN */
-#Main{
-    height: 80vh;
-    width: 90%;
-    margin: 0 auto;
-    background-color: rgb(255, 255, 255);
-    padding: 2em 0;
-    display: flex;
-    gap: 1em;
+#Main {
+  height: 80vh;
+  width: 90%;
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255);
+  padding: 2em 0;
+  display: flex;
+  gap: 1em;
+}
+#Main img {
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+#left {
+  overflow: hidden;
+  height: 100%;
+  width: 65%;
+  border-radius: 0.4em;
+}
+#Right {
+  height: 100%;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+#Right #top {
+  border-radius: 0.4em;
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+}
+#Right #bottom {
+  overflow: hidden;
+  border-radius: 0.4em;
+  width: 100%;
+  height: 50%;
+}
+.owl-nav {
+  position: absolute;
+  margin: 0;
 }
 
-#Main img{
-    height:100%; 
-    width: 100%;
+/* BANNER */
+#Banner {
+  width: 100%;
+  height: 16vh;
+  background-color: #3a4855;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-shrink: 0;
+}
+#Banner i {
+  border: 2px solid blue;
+  border-radius: 500px;
+  padding: 10px;
+  flex-shrink: 0;
+  font-size: larger;
+  color: orangered;
+  align-items: center;
+  justify-items: center;
+}
+#BannerContent {
+  display: flex;
+  gap: 0.9em;
+}
+#BannerContent h6 {
+  margin: 0;
+  padding: 2px;
+}
+#BannerContent #title {
+  color: white;
+  font-size: medium;
+  font-weight: 500;
+}
+#BannerContent #subtitle {
+  color: rgb(180, 180, 180);
+  font-size: small;
+  font-weight: 600;
 }
 
-#left{
-    overflow: hidden;
-    height:100%;
-    width: 65%;
-    border-radius: .4em;  
+/* Why buy from us? */
+.HEADING {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 40px;
 }
-#Right{
-    height:100%;
-    width: 35%;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
+.HEADING h2 {
+  font-weight: 700;
+  font-size: 4.5vh;
+  margin: 1em auto 0.8em auto;
 }
-#Right #top{
-    border-radius: .4em;
-    width: 100%;
-    height: 50%;
-    overflow: hidden;
+.HEADING p {
+  margin: 0.8em auto;
+  padding: 0.5em 0 1.5em 0;
 }
-#Right #bottom{
-    overflow: hidden;
-    border-radius: .4em;
-    width: 100%;
-    height: 50%;
+.HEADING h3 {
+  color: orangered;
+}
+.btn-group {
+  box-shadow: none;
+  margin-bottom: 20;
+}
+.btn-group .btn {
+  border: 0.02em solid #c3c3c3;
+  background-color: #eeeeee;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #696973;
+  box-shadow: none;
+}
+.btn-group .bt {
+  background-color: #0e68e7;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #ffffff;
+  padding: 5px 16px;
+  border-radius: 3px 0 0 3px;
+  border: none;
 }
 
+/* Featured products */
+#Products {
+  background-color: #f8f8f8;
+}
+/* Card */
+.Featured-cards {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.Featured-card {
+  margin-top: 2em;
+  flex-shrink: 0;
+  box-shadow: none;
+  width: 230px;
+  height: 400px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
