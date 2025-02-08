@@ -442,52 +442,8 @@
         <button type="button" class="btn btn-primary">FASHION</button>
       </div>
       <!-- Carousel -->
-      <div
-        id="cards"
-        style="
-          display: flex;
-          margin-top: 2rem;
-          gap: 10px;
-          height: 20rem;
-          width: 90%;
-          overflow-x: auto;
-          overflow-y: hidden;
-        "
-      >
-        <div
-          class="card"
-          style="
-            overflow-y: hidden;
-            height: 280px;
-            border-radius: 8px;
-            overflow: hidden;
-            flex-shrink: 0;
-            width: 18%;
-            display: flex;
-            box-shadow: none;
-            position: relative;
-          "
-        >
-          <img
-            src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg"
-            style="object-fit: cover; width: 100%; height: 100%"
-            alt=""
-          />
-          <button
-            style="
-              position: absolute;
-              bottom: 0%;
-              left: 50%;
-              transform: translate(-50%, -15%);
-              padding: 5px 8px;
-              border-radius: 4px;
-              border: 1px solid gray;
-              background-color: white;
-            "
-          >
-            FASHION
-          </button>
-        </div>
+      <div id="cards">
+      
         <div
           class="card"
           style="
@@ -694,23 +650,25 @@
         </div>
       </div>
     </div>
-
-
-
-
-
-
-
-
-
-    
-
     <!-- Featured Products -->
     <div class="HEADING" id="Products">
       <h2>Featured Products</h2>
-      <hr style="width: 5%; text-align: left; margin: 0;height: 3px; color: orangered; background-color: orangered;"/>
-      <p>Display any products as tabs or accordions with optional grid or carousel mode. Custom products per module and per breakpoint.<br />
-        Each module can display products in either grid or list view with different styles per module.</p>
+      <hr
+        style="
+          width: 5%;
+          text-align: left;
+          margin: 0;
+          height: 3px;
+          color: orangered;
+          background-color: orangered;
+        "
+      />
+      <p>
+        Display any products as tabs or accordions with optional grid or
+        carousel mode. Custom products per module and per breakpoint.<br />
+        Each module can display products in either grid or list view with
+        different styles per module.
+      </p>
       <!-- Tags -->
       <div class="btn-group">
         <div class="category-btn d-flex">
@@ -730,29 +688,20 @@
         <button type="button" class="btn btn-primary">BESTSELLERS</button>
         <button type="button" class="btn btn-primary">SPECIALS</button>
       </div>
-
       <!-- Carousel -->
+      <div id="products-cards">
+        <!-- Featured-cards -->
         <div class="Featured-card">
           <img
-            style="width: 100%; height: 50%; object-fit: cover"
-            src="https://images.pexels.com/photos/2346006/pexels-photo-2346006.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=1&w=500"
+            src="https://i.pinimg.com/736x/51/2c/51/512c51c42f1922f6a846d286667c9efd.jpg"
+            alt="Headphones"
           />
-
-          <div
-            style="
-              display: flex;
-              justify-content: space-between;
-              background: #f0f0f0;
-              padding: 5px 10px;
-              font-size: 14px;
-              color: gray;
-            "
-          >
+          <div class="Featured-card-div2">
             <p style="margin: 0">Ericksson</p>
             <p style="margin: 0">Model 519</p>
           </div>
 
-          <div style="text-align: left; padding: 3px 0 0 8px">
+          <div style="padding: 10px">
             <h5 style="margin: 5px 0; font-size: 18px; font-weight: bold">
               Headphones
             </h5>
@@ -769,31 +718,28 @@
               >
             </p>
           </div>
-          <!-- Functions -->
+
           <div
             style="
               display: flex;
-              align-items: center;
               justify-content: space-between;
-              padding: 13px;
+              align-items: center;
+              padding: 10px;
             "
           >
-            <!-- Add to cart -->
             <div
               style="
                 display: flex;
-                justify-content: space-between;
                 align-items: center;
+                gap: 5px;
                 font-size: 14px;
-                width: 60%;
               "
             >
-              <span style="display: flex; align-items: center">
-                <p style="border: 1px solid gray; padding: 2px 8px">1</p>
-                <span style="border: 1px solid gray; padding: 2px 4px">
-                  <i class="fa-solid fa-arrows-up-down"></i>
-                </span>
-              </span>
+              <!-- <p style="margin: 0">1 <i class="ri-expand-up-down-line"></i></p> -->
+              <input
+                type="number"
+                style="width: 2.2em; height: 2.2em; padding: 2px"
+              />
               <button
                 style="
                   background-color: #007bff;
@@ -801,16 +747,16 @@
                   padding: 6px 14px;
                   border: none;
                   border-radius: 5px;
-                  text-wrap: nowrap;
+                  cursor: pointer;
+                  transition: background 0.3s;
                 "
               >
                 Add To Cart
               </button>
             </div>
-            <!-- Functional Icons -->
             <div style="display: flex; gap: 10px">
               <i
-                class="fa-regular fa-heart"
+                class="ri-heart-3-line"
                 style="
                   font-size: 18px;
                   color: gray;
@@ -819,8 +765,13 @@
                 "
               ></i>
               <i
-                class="fa-solid fa-arrow-right-arrow-left"
-                style="font-size: 18px; color: gray; cursor: pointer"
+                class="ri-arrow-left-right-line"
+                style="
+                  font-size: 18px;
+                  color: gray;
+                  cursor: pointer;
+                  transition: color 0.3s;
+                "
               ></i>
             </div>
           </div>
@@ -841,8 +792,8 @@
                 font-weight: 400;
               "
             >
-              <i style="color: green" class="fa-solid fa-dollar-sign"></i>Buy
-              Now
+              <i style="color: green" class="ri-money-dollar-circle-line"></i
+              >Buy Now
             </p>
             <p
               style="
@@ -852,11 +803,11 @@
                 font-weight: 400;
               "
             >
-              <i style="color: red" class="fa-regular fa-circle-question"></i
-              >Question
+              <i style="color: red" class="ri-question-line"></i>Question
             </p>
           </div>
         </div>
+      </div>
       <button
         style="
           margin-top: 15px;
@@ -870,6 +821,752 @@
         See all products <i class="fa-solid fa-arrow-right"></i>
       </button>
     </div>
+    <!-- Featured Category -->
+    <div class="HEADING" id="Featured-category">
+      <h2>Featured Category</h2>
+      <hr
+        style="
+          width: 5%;
+          text-align: left;
+          margin: 0;
+          height: 3px;
+          color: orangered;
+          background-color: orangered;
+        "
+      />
+      <p>
+        Easily create category based modules and display products from specific
+        categories or brands only. The advanced page builder allows you<br />
+        to create any grid layout full control at any breakpoint.
+      </p>
+      <div id="Category-cards">
+        <div class="cardLeft">
+          <div>Fashion</div>
+          <div
+            style="width: 30px; background-color: orangered; height: 5px"
+          ></div>
+          <div id="imgdiv">
+            <img
+              src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?cs=srgb&dl=pexels-stefanstefancik-91227.jpg&fm=jpg"
+              alt="Portrait"
+            />
+          </div>
+          <div>Accesories</div>
+          <div>Dresses</div>
+          <div>Pants</div>
+          <div>T-Shirts</div>
+          <div><a href="">See all in Fashion</a></div>
+        </div>
+        <!-- Carousel -->
+        <div class="carousel">
+          <div>New in Fashion</div>
+          <div
+            style="width: 30px; background-color: orangered; height: 1px"
+          ></div>
+          <div id="carousel-cards">
+            <!-- Single card -->
+
+            <div class="movingCard">
+              <!-- Discount Ribbon -->
+              <div style="position: relative; overflow: hidden">
+                <div
+                  style="
+                    position: absolute;
+                    top: 10px;
+                    left: -40px;
+                    background-color: #dc0e1b;
+                    color: white;
+                    padding: 5px 40px;
+                    transform: rotate(-45deg);
+                    font-weight: bold;
+                    font-size: 12px;
+                    z-index: 2;
+                  "
+                >
+                  2 - 3 DAYS
+                </div>
+
+                <!-- Top-right Tag -->
+                <div
+                  style="
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    background-color: #0f3a8e;
+                    color: white;
+                    padding: 4px 8px;
+                    border-radius: 5px;
+                    font-size: 12px;
+                    z-index: 2;
+                  "
+                >
+                  New
+                </div>
+
+                <div>
+                  <img
+                    src="https://images.unsplash.com/photo-1541516160071-4bb0c5af65ba?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dGFraW5nJTIwcGhvdG98ZW58MHx8MHx8fDA%3D"
+                    alt=""
+                    style="width: 100%"
+                  />
+                </div>
+              </div>
+
+              <div style="padding: 4px 0 0 6px; color: #0e68e7">
+                BodyCorn Dress
+              </div>
+              <div style="padding: 4px 0 0 6px">$399.00</div>
+              <hr />
+
+              <div
+                style="
+                  display: flex;
+                  gap: 0.92em;
+                  align-items: center;
+                  justify-content: space-between;
+                  padding: 3px 5px;
+                "
+              >
+                <div
+                  style="
+                    background-color: #0f3a8e;
+                    color: white;
+                    padding: 3px 5px;
+                    border-radius: 5%;
+                  "
+                >
+                  Add to cart
+                </div>
+                <div style="display: flex; gap: 2.6em">
+                  <i class="fa-regular fa-heart"></i>
+                  <i class="fa-solid fa-right-left"></i>
+                </div>
+              </div>
+            </div>
+            <div class="movingCard">
+              <!-- Discount Ribbon -->
+              <div style="position: relative; overflow: hidden">
+                <div
+                  style="
+                    position: absolute;
+                    top: 10px;
+                    left: -40px;
+                    background-color: #dc0e1b;
+                    color: white;
+                    padding: 5px 40px;
+                    transform: rotate(-45deg);
+                    font-weight: bold;
+                    font-size: 12px;
+                    z-index: 2;
+                  "
+                >
+                  2 - 3 DAYS
+                </div>
+
+                <!-- Top-right Tag -->
+                <div
+                  style="
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    background-color: #0f3a8e;
+                    color: white;
+                    padding: 4px 8px;
+                    border-radius: 5px;
+                    font-size: 12px;
+                    z-index: 2;
+                  "
+                >
+                  New
+                </div>
+
+                <div>
+                  <img
+                    src="https://images.unsplash.com/photo-1541516160071-4bb0c5af65ba?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dGFraW5nJTIwcGhvdG98ZW58MHx8MHx8fDA%3D"
+                    alt=""
+                    style="width: 100%"
+                  />
+                </div>
+              </div>
+
+              <div style="padding: 4px 0 0 6px; color: #0e68e7">
+                BodyCorn Dress
+              </div>
+              <div style="padding: 4px 0 0 6px">$399.00</div>
+              <hr />
+
+              <div
+                style="
+                  display: flex;
+                  gap: 0.92em;
+                  align-items: center;
+                  justify-content: space-between;
+                  padding: 3px 5px;
+                "
+              >
+                <div
+                  style="
+                    background-color: #0f3a8e;
+                    color: white;
+                    padding: 3px 5px;
+                    border-radius: 5%;
+                  "
+                >
+                  Add to cart
+                </div>
+                <div style="display: flex; gap: 2.6em">
+                  <i class="fa-regular fa-heart"></i>
+                  <i class="fa-solid fa-right-left"></i>
+                </div>
+              </div>
+            </div>
+            <div class="movingCard">
+              <!-- Discount Ribbon -->
+              <div style="position: relative; overflow: hidden">
+                <div
+                  style="
+                    position: absolute;
+                    top: 10px;
+                    left: -40px;
+                    background-color: #dc0e1b;
+                    color: white;
+                    padding: 5px 40px;
+                    transform: rotate(-45deg);
+                    font-weight: bold;
+                    font-size: 12px;
+                    z-index: 2;
+                  "
+                >
+                  2 - 3 DAYS
+                </div>
+
+                <!-- Top-right Tag -->
+                <div
+                  style="
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    background-color: #0f3a8e;
+                    color: white;
+                    padding: 4px 8px;
+                    border-radius: 5px;
+                    font-size: 12px;
+                    z-index: 2;
+                  "
+                >
+                  New
+                </div>
+
+                <div>
+                  <img
+                    src="https://images.unsplash.com/photo-1541516160071-4bb0c5af65ba?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dGFraW5nJTIwcGhvdG98ZW58MHx8MHx8fDA%3D"
+                    alt=""
+                    style="width: 100%"
+                  />
+                </div>
+              </div>
+
+              <div style="padding: 4px 0 0 6px; color: #0e68e7">
+                BodyCorn Dress
+              </div>
+              <div style="padding: 4px 0 0 6px">$399.00</div>
+              <hr />
+
+              <div
+                style="
+                  display: flex;
+                  gap: 0.92em;
+                  align-items: center;
+                  justify-content: space-between;
+                  padding: 3px 5px;
+                "
+              >
+                <div
+                  style="
+                    background-color: #0f3a8e;
+                    color: white;
+                    padding: 3px 5px;
+                    border-radius: 5%;
+                  "
+                >
+                  Add to cart
+                </div>
+                <div style="display: flex; gap: 2.6em">
+                  <i class="fa-regular fa-heart"></i>
+                  <i class="fa-solid fa-right-left"></i>
+                </div>
+              </div>
+            </div>
+            <div class="movingCard">
+              <!-- Discount Ribbon -->
+              <div style="position: relative; overflow: hidden">
+                <div
+                  style="
+                    position: absolute;
+                    top: 10px;
+                    left: -40px;
+                    background-color: #dc0e1b;
+                    color: white;
+                    padding: 5px 40px;
+                    transform: rotate(-45deg);
+                    font-weight: bold;
+                    font-size: 12px;
+                    z-index: 2;
+                  "
+                >
+                  2 - 3 DAYS
+                </div>
+
+                <!-- Top-right Tag -->
+                <div
+                  style="
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    background-color: #0f3a8e;
+                    color: white;
+                    padding: 4px 8px;
+                    border-radius: 5px;
+                    font-size: 12px;
+                    z-index: 2;
+                  "
+                >
+                  New
+                </div>
+
+                <div>
+                  <img
+                    src="https://images.unsplash.com/photo-1541516160071-4bb0c5af65ba?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dGFraW5nJTIwcGhvdG98ZW58MHx8MHx8fDA%3D"
+                    alt=""
+                    style="width: 100%"
+                  />
+                </div>
+              </div>
+
+              <div style="padding: 4px 0 0 6px; color: #0e68e7">
+                BodyCorn Dress
+              </div>
+              <div style="padding: 4px 0 0 6px">$399.00</div>
+              <hr />
+
+              <div
+                style="
+                  display: flex;
+                  gap: 0.92em;
+                  align-items: center;
+                  justify-content: space-between;
+                  padding: 3px 5px;
+                "
+              >
+                <div
+                  style="
+                    background-color: #0f3a8e;
+                    color: white;
+                    padding: 3px 5px;
+                    border-radius: 5%;
+                  "
+                >
+                  Add to cart
+                </div>
+                <div style="display: flex; gap: 2.6em">
+                  <i class="fa-regular fa-heart"></i>
+                  <i class="fa-solid fa-right-left"></i>
+                </div>
+              </div>
+            </div>
+            <div class="movingCard">
+              <!-- Discount Ribbon -->
+              <div style="position: relative; overflow: hidden">
+                <div
+                  style="
+                    position: absolute;
+                    top: 10px;
+                    left: -40px;
+                    background-color: #dc0e1b;
+                    color: white;
+                    padding: 5px 40px;
+                    transform: rotate(-45deg);
+                    font-weight: bold;
+                    font-size: 12px;
+                    z-index: 2;
+                  "
+                >
+                  2 - 3 DAYS
+                </div>
+
+                <!-- Top-right Tag -->
+                <div
+                  style="
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    background-color: #0f3a8e;
+                    color: white;
+                    padding: 4px 8px;
+                    border-radius: 5px;
+                    font-size: 12px;
+                    z-index: 2;
+                  "
+                >
+                  New
+                </div>
+
+                <div>
+                  <img
+                    src="https://images.unsplash.com/photo-1541516160071-4bb0c5af65ba?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dGFraW5nJTIwcGhvdG98ZW58MHx8MHx8fDA%3D"
+                    alt=""
+                    style="width: 100%"
+                  />
+                </div>
+              </div>
+
+              <div style="padding: 4px 0 0 6px; color: #0e68e7">
+                BodyCorn Dress
+              </div>
+              <div style="padding: 4px 0 0 6px">$399.00</div>
+              <hr />
+
+              <div
+                style="
+                  display: flex;
+                  gap: 0.92em;
+                  align-items: center;
+                  justify-content: space-between;
+                  padding: 3px 5px;
+                "
+              >
+                <div
+                  style="
+                    background-color: #0f3a8e;
+                    color: white;
+                    padding: 3px 5px;
+                    border-radius: 5%;
+                  "
+                >
+                  Add to cart
+                </div>
+                <div style="display: flex; gap: 2.6em">
+                  <i class="fa-regular fa-heart"></i>
+                  <i class="fa-solid fa-right-left"></i>
+                </div>
+              </div>
+            </div>
+            <div class="movingCard">
+              <!-- Discount Ribbon -->
+              <div style="position: relative; overflow: hidden">
+                <div
+                  style="
+                    position: absolute;
+                    top: 10px;
+                    left: -40px;
+                    background-color: #dc0e1b;
+                    color: white;
+                    padding: 5px 40px;
+                    transform: rotate(-45deg);
+                    font-weight: bold;
+                    font-size: 12px;
+                    z-index: 2;
+                  "
+                >
+                  2 - 3 DAYS
+                </div>
+
+                <!-- Top-right Tag -->
+                <div
+                  style="
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    background-color: #0f3a8e;
+                    color: white;
+                    padding: 4px 8px;
+                    border-radius: 5px;
+                    font-size: 12px;
+                    z-index: 2;
+                  "
+                >
+                  New
+                </div>
+
+                <div>
+                  <img
+                    src="https://images.unsplash.com/photo-1541516160071-4bb0c5af65ba?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dGFraW5nJTIwcGhvdG98ZW58MHx8MHx8fDA%3D"
+                    alt=""
+                    style="width: 100%"
+                  />
+                </div>
+              </div>
+
+              <div style="padding: 4px 0 0 6px; color: #0e68e7">
+                BodyCorn Dress
+              </div>
+              <div style="padding: 4px 0 0 6px">$399.00</div>
+              <hr />
+
+              <div
+                style="
+                  display: flex;
+                  gap: 0.92em;
+                  align-items: center;
+                  justify-content: space-between;
+                  padding: 3px 5px;
+                "
+              >
+                <div
+                  style="
+                    background-color: #0f3a8e;
+                    color: white;
+                    padding: 3px 5px;
+                    border-radius: 5%;
+                  "
+                >
+                  Add to cart
+                </div>
+                <div style="display: flex; gap: 2.6em">
+                  <i class="fa-regular fa-heart"></i>
+                  <i class="fa-solid fa-right-left"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Shop by Brand -->
+    <div class="HEADING">
+      <h2>Shop by Brand</h2>
+      <hr
+        style="
+          width: 5%;
+          text-align: left;
+          margin: 0;
+          height: 3px;
+          color: orangered;
+          background-color: orangered;
+        "
+      />
+      <!-- BRAND LOGO(s)-->
+      <div id="Brands">
+        <div id="Logo">
+          <img
+            src="https://designwanted.com/wp-content/uploads/2024/01/Sony-_-Brands-_-Cover-image.png"
+            alt=""
+          />
+        </div>
+        <div id="Logo">
+          <img
+            src="https://designwanted.com/wp-content/uploads/2024/01/Sony-_-Brands-_-Cover-image.png"
+            alt=""
+          />
+        </div>
+        <div id="Logo">
+          <img
+            src="https://designwanted.com/wp-content/uploads/2024/01/Sony-_-Brands-_-Cover-image.png"
+            alt=""
+          />
+        </div>
+        <div id="Logo">
+          <img
+            src="https://designwanted.com/wp-content/uploads/2024/01/Sony-_-Brands-_-Cover-image.png"
+            alt=""
+          />
+        </div>
+        <div id="Logo">
+          <img
+            src="https://designwanted.com/wp-content/uploads/2024/01/Sony-_-Brands-_-Cover-image.png"
+            alt=""
+          />
+        </div>
+        <div id="Logo">
+          <img
+            src="https://designwanted.com/wp-content/uploads/2024/01/Sony-_-Brands-_-Cover-image.png"
+            alt=""
+          />
+        </div>
+        <div id="Logo">
+          <img
+            src="https://designwanted.com/wp-content/uploads/2024/01/Sony-_-Brands-_-Cover-image.png"
+            alt=""
+          />
+        </div>
+        <div id="Logo">
+          <img
+            src="https://designwanted.com/wp-content/uploads/2024/01/Sony-_-Brands-_-Cover-image.png"
+            alt=""
+          />
+        </div>
+        <div id="Logo">
+          <img
+            src="https://designwanted.com/wp-content/uploads/2024/01/Sony-_-Brands-_-Cover-image.png"
+            alt=""
+          />
+        </div>
+        <div id="Logo">
+          <img
+            src="https://designwanted.com/wp-content/uploads/2024/01/Sony-_-Brands-_-Cover-image.png"
+            alt=""
+          />
+        </div>
+        <div id="Logo">
+          <img
+            src="https://designwanted.com/wp-content/uploads/2024/01/Sony-_-Brands-_-Cover-image.png"
+            alt=""
+          />
+        </div>
+        <div id="Logo">
+          <img
+            src="https://designwanted.com/wp-content/uploads/2024/01/Sony-_-Brands-_-Cover-image.png"
+            alt=""
+          />
+        </div>
+        <div id="Logo">
+          <img
+            src="https://designwanted.com/wp-content/uploads/2024/01/Sony-_-Brands-_-Cover-image.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Improved Gallery Module -->
+    <div class="HEADING" id="Gallery">
+      <h2>Improved Gallery Module</h2>
+      <hr
+        style="
+          width: 5%;
+          text-align: left;
+          margin: 0;
+          height: 3px;
+          color: #DD612E;
+          background-color: #DD612E;
+        "
+      />
+      <p>
+       The Gallery module supports images, videos and can also act as banners that can point to any other pagae or open other Popup modules.<br>
+       Create different modules with images, videos, banners or a combination of all. Add your modules on any page in any grid format.
+      </p>
+      <div id="Brand">
+        <div id="Logo">
+          <img
+            src="https://media.istockphoto.com/id/470928002/photo/intelligence-concept.jpg?s=612x612&w=is&k=20&c=NTWL7YpviVBtbcySw4ABvp2o53K4xiHVZUxrZKnXYYU="
+            alt=""
+          />
+        </div>
+        <div id="Logo">
+          <img
+            src="https://www.piclumen.com/wp-content/uploads/2024/10/piclumen-upscale-after.webp"
+            alt=""
+          />
+        </div>
+        <div id="Logo">
+          <img
+            src="https://th.bing.com/th/id/OIG1.54KCbwld1CFqClrd_Rb0"
+            alt=""
+          />
+        </div>
+        <div id="Logo">
+          <img
+            src="https://media.istockphoto.com/id/470928002/photo/intelligence-concept.jpg?s=612x612&w=is&k=20&c=NTWL7YpviVBtbcySw4ABvp2o53K4xiHVZUxrZKnXYYU="
+            alt=""
+          />
+        </div>
+        <div id="Logo">
+          <img
+            src="https://www.piclumen.com/wp-content/uploads/2024/10/piclumen-upscale-after.webp"
+            alt=""
+          />
+        </div>
+        <div id="Logo">
+          <img
+            src="https://th.bing.com/th/id/OIG1.54KCbwld1CFqClrd_Rb0"
+            alt=""
+          />
+        </div>
+        <div id="Logo">
+          <img
+            src="https://media.istockphoto.com/id/470928002/photo/intelligence-concept.jpg?s=612x612&w=is&k=20&c=NTWL7YpviVBtbcySw4ABvp2o53K4xiHVZUxrZKnXYYU="
+            alt=""
+          />
+        </div>
+        <div id="Logo">
+          <img
+            src="https://www.piclumen.com/wp-content/uploads/2024/10/piclumen-upscale-after.webp"
+            alt=""
+          />
+        </div>
+        <div id="Logo">
+          <img
+            src="https://th.bing.com/th/id/OIG1.54KCbwld1CFqClrd_Rb0"
+            alt=""
+          />
+        </div>
+        <div id="Logo">
+          <img
+            src="https://media.istockphoto.com/id/470928002/photo/intelligence-concept.jpg?s=612x612&w=is&k=20&c=NTWL7YpviVBtbcySw4ABvp2o53K4xiHVZUxrZKnXYYU="
+            alt=""
+          />
+        </div>
+        <div id="Logo">
+          <img
+            src="https://www.piclumen.com/wp-content/uploads/2024/10/piclumen-upscale-after.webp"
+            alt=""
+          />
+        </div>
+        <div id="Logo">
+          <img
+            src="https://th.bing.com/th/id/OIG1.54KCbwld1CFqClrd_Rb0"
+            alt=""
+          />
+        </div>
+        <div id="Logo">
+          <img
+            src="https://media.istockphoto.com/id/470928002/photo/intelligence-concept.jpg?s=612x612&w=is&k=20&c=NTWL7YpviVBtbcySw4ABvp2o53K4xiHVZUxrZKnXYYU="
+            alt=""
+          />
+        </div>
+        <div id="Logo">
+          <img
+            src="https://www.piclumen.com/wp-content/uploads/2024/10/piclumen-upscale-after.webp"
+            alt=""
+          />
+        </div>
+        <div id="Logo">
+          <img
+            src="https://th.bing.com/th/id/OIG1.54KCbwld1CFqClrd_Rb0"
+            alt=""
+          />
+        </div>
+        <div id="Logo">
+          <img
+            src="https://media.istockphoto.com/id/470928002/photo/intelligence-concept.jpg?s=612x612&w=is&k=20&c=NTWL7YpviVBtbcySw4ABvp2o53K4xiHVZUxrZKnXYYU="
+            alt=""
+          />
+        </div>
+        <div id="Logo">
+          <img
+            src="https://www.piclumen.com/wp-content/uploads/2024/10/piclumen-upscale-after.webp"
+            alt=""
+          />
+        </div>
+        <div id="Logo">
+          <img
+            src="https://th.bing.com/th/id/OIG1.54KCbwld1CFqClrd_Rb0"
+            alt=""
+          />
+        </div>
+     
+      </div>
+      
+     
+    </div>
+
+    
+
+
+
+
+
 
 
 
