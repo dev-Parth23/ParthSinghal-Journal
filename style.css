@@ -9,7 +9,6 @@ body {
   width: 100%;
   background-color: white;
 }
-
 ::-webkit-scrollbar {
   display: none;
 }
@@ -62,6 +61,7 @@ body {
 /* Heading */
 #container h4 {
   font-weight: bold;
+  margin: 0;
 }
 /* Search bar */
 #searchBox {
@@ -93,22 +93,26 @@ body {
   background-color: #fff;
   color: white;
 }
+
 /* Menu Buttons */
 .menuButtons {
   display: flex;
   gap: 0.4em;
 }
+
 .menuButtonsDiv {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 /* Bill amount */
 .bill {
   display: flex;
   gap: 0.6em;
   align-items: center;
 }
+
 .bill button {
   display: flex;
   align-items: center;
@@ -133,6 +137,7 @@ body {
   box-shadow: none;
   padding: 0;
 }
+
 #tabBar .container {
   width: 90%;
   height: 100%;
@@ -145,6 +150,7 @@ body {
   font-weight: 500;
   font-size: medium;
 }
+
 .tabsleft #highlight {
   display: flex;
   gap: 0.4em;
@@ -155,6 +161,7 @@ body {
   color: black;
   font-weight: 500;
 }
+
 /* Left side */
 #tabBar .container .tabsleft {
   background-color: #0d51d6;
@@ -165,6 +172,7 @@ body {
   height: 100%;
   padding: 0%;
 }
+
 /* right side */
 #tabBar .container .tabsright {
   background-color: #0d51d6;
@@ -173,6 +181,20 @@ body {
   justify-content: space-evenly;
   align-items: center;
   gap: 2em;
+}
+#tabBar .container .tabsright #phone {
+  display: flex;
+  gap: 0.4em;
+}
+#tabBar .container .tabsright #Blog {
+  display: flex;
+  gap: 0.4em;
+  background-color: #fdd32f;
+  padding: 0 0.9em;
+  height: 100%;
+  align-items: center;
+  color: black;
+  font-weight: 500;
 }
 
 /* MAIN */
@@ -185,17 +207,21 @@ body {
   display: flex;
   gap: 1em;
 }
+
 #Main img {
   height: 100%;
   position: relative;
   width: 100%;
 }
-#left {
+
+#Main #left {
+  position: relative;
   overflow: hidden;
   height: 100%;
   width: 65%;
   border-radius: 0.4em;
 }
+
 #Right {
   height: 100%;
   width: 35%;
@@ -203,18 +229,21 @@ body {
   flex-direction: column;
   gap: 1em;
 }
+
 #Right #top {
   border-radius: 0.4em;
   width: 100%;
   height: 50%;
   overflow: hidden;
 }
+
 #Right #bottom {
   overflow: hidden;
   border-radius: 0.4em;
   width: 100%;
   height: 50%;
 }
+
 .owl-nav {
   position: absolute;
   margin: 0;
@@ -230,6 +259,7 @@ body {
   align-items: center;
   flex-shrink: 0;
 }
+
 #Banner i {
   border: 2px solid blue;
   border-radius: 500px;
@@ -240,19 +270,24 @@ body {
   align-items: center;
   justify-items: center;
 }
+
 #BannerContent {
   display: flex;
   gap: 0.9em;
+  align-items: center;
 }
+
 #BannerContent h6 {
   margin: 0;
   padding: 2px;
 }
+
 #BannerContent #title {
   color: white;
   font-size: medium;
   font-weight: 500;
 }
+
 #BannerContent #subtitle {
   color: rgb(180, 180, 180);
   font-size: small;
@@ -268,22 +303,53 @@ body {
   text-align: center;
   padding-bottom: 40px;
 }
+.HEADING .card {
+  overflow-y: hidden;
+  height: 280px;
+  border-radius: 8px;
+  overflow: hidden;
+  flex-shrink: 0;
+  width: 18%;
+  display: flex;
+  box-shadow: none;
+  position: relative;
+}
+.HEADING .card img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.HEADING .card button {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, -15%);
+  padding: 5px 8px;
+  border-radius: 4px;
+  border: 1px solid gray;
+  background-color: white;
+}
+
 .HEADING h2 {
   font-weight: 700;
   font-size: 4.5vh;
   margin: 1.5em auto 0.8em auto;
 }
+
 .HEADING p {
   margin: 0.8em auto;
   padding: 0.5em 0 1.5em 0;
 }
+
 .HEADING h3 {
   color: orangered;
 }
+
 .btn-group {
   box-shadow: none;
   margin-bottom: 20;
 }
+
 .btn-group .btn {
   border: 0.02em solid #c3c3c3;
   background-color: #eeeeee;
@@ -292,6 +358,7 @@ body {
   color: #696973;
   box-shadow: none;
 }
+
 .btn-group .bt {
   background-color: #0e68e7;
   text-transform: uppercase;
@@ -301,6 +368,7 @@ body {
   border-radius: 3px 0 0 3px;
   border: none;
 }
+
 #cards {
   display: flex;
   margin-top: 2rem;
@@ -310,6 +378,7 @@ body {
   overflow-x: auto;
   overflow-y: hidden;
 }
+
 #card {
   overflow-y: hidden;
   height: 280px;
@@ -321,10 +390,12 @@ body {
   box-shadow: none;
   position: relative;
 }
+
 /* Featured products */
 #Products {
   background-color: #f8f8f8;
 }
+
 #products-cards {
   display: flex;
   margin-top: 2rem;
@@ -334,35 +405,7 @@ body {
   overflow-y: hidden;
   align-items: center;
 }
-.Featured-container {
-  width: 100%;
-  background-color: #f0f0f0;
-  margin: 2em 0;
-}
-.Featured-Pro-main {
-  /* border:1px solid; */
-  max-width: 90%;
-  margin: 12px auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-  padding: 2em 0 0 0;
-  /* margin-top:12px; */
-  /* background: ; */
-}
-#hr-line {
-  width: 50px;
-  color: red;
-  font-size: 16px;
-  margin: 0;
-  /* background-color: red; */
-}
-.Featured-pro-desc {
-  padding: 0 4em;
-  margin: 0 2.5em;
-}
+
 .Featured-card {
   width: 255px;
   height: 400px;
@@ -375,11 +418,13 @@ body {
 
   flex-shrink: 0;
 }
+
 .Featured-card img {
   width: 100%;
   height: 50%;
   object-fit: cover;
 }
+
 .Featured-card-div2 {
   display: flex;
   justify-content: space-between;
@@ -388,29 +433,19 @@ body {
   font-size: 14px;
   color: gray;
 }
-#featured-products {
-  margin: 1.5em 0;
-}
-#featured-products-btn {
-  display: flex;
-  font-size: 12px;
-  font-family: sans-serif;
-  background-color: blue;
-  color: white;
-  border: none;
-  padding: 6px 8px;
-}
 
 /* FEATURED CATEGORY */
 #Featured-category {
   background-color: #eef2f5;
 }
+
 /* Fixed card */
 #Featured-category #Category-cards {
   display: flex;
   width: 90%;
   background-color: blue;
 }
+
 #Featured-category #Category-cards .cardLeft {
   width: 20%;
   text-align: left;
@@ -421,6 +456,7 @@ body {
   flex-direction: column;
   gap: 0.6em;
 }
+
 #Featured-category #Category-cards img {
   width: 100%;
   height: 100%;
@@ -428,6 +464,7 @@ body {
   display: flex;
   padding: 0 auto;
 }
+
 #Featured-category #Category-cards .cardLeft #imgdiv {
   width: 100%;
   height: 150%;
@@ -435,6 +472,7 @@ body {
   display: flex;
   padding: 0 auto;
 }
+
 #Featured-category #Category-cards .cardLeft a {
   text-decoration: underline;
   color: #103a8e;
@@ -452,6 +490,7 @@ body {
   flex-direction: column;
   gap: 0.6em;
 }
+
 #Featured-category #Category-cards .carousel #carousel-cards {
   overflow-x: auto;
   display: flex;
@@ -459,6 +498,7 @@ body {
   gap: 1.5em;
   justify-content: space-between;
 }
+
 /* Single Card */
 #Featured-category #Category-cards .carousel #carousel-cards .movingCard {
   flex-shrink: 0;
@@ -470,6 +510,7 @@ body {
   padding: 5px;
   position: relative;
 }
+
 #Featured-category #Category-cards .carousel #carousel-cards .movingCard img {
   height: 190px;
   background-color: white;
@@ -477,7 +518,7 @@ body {
 }
 
 /* Shop by Brands */
-#Brands{
+#Brands {
   display: flex;
   width: 90%;
   overflow-x: auto;
@@ -485,60 +526,253 @@ body {
   margin: 2.5em 0 0 0;
   border-radius: 2%;
 }
-#Brands #Logo{
+
+#Brands #Logo {
   width: 100px;
   height: 100px;
- /* background-color: red; */
- display: flex;
- justify-content: center;
- align-items: center;
- border-radius: 5%;
- border: 0.1em solid rgb(140, 139, 139);
- flex-shrink: 0;
- overflow: hidden;
-
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5%;
+  border: 0.1em solid rgb(140, 139, 139);
+  flex-shrink: 0;
+  overflow: hidden;
 }
-#Brands #Logo img{
+
+#Brands #Logo img {
   object-fit: contain;
   width: 90%;
   height: 90%;
-filter: grayscale(100%);}
+  filter: grayscale(100%);
+}
 
 /* Improved Gallery Module */
-#Gallery{
-  background-color: #3A4855;
+#Gallery {
+  background-color: #3a4855;
 }
 
-#Gallery h2{
+#Gallery h2 {
   color: white;
 }
-#Gallery p{
+
+#Gallery p {
   color: rgb(156, 155, 155);
   font-weight: 400;
 }
 
-#Brand{
+#Brand {
   display: flex;
   width: 90%;
   overflow-x: auto;
   gap: 2em;
-  margin: .5em 0 0 0;
+  margin: 0.5em 0 0 0;
   border-radius: 2%;
 }
-#Brand #Logo{
+
+#Brand #Logo {
   width: 100px;
   height: 100px;
- /* background-color: red; */
- display: flex;
- justify-content: center;
- align-items: center;
- border-radius: 5%;
- border: 0.1em solid rgb(140, 139, 139);
- flex-shrink: 0;
- overflow: hidden;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5%;
+  border: 0.1em solid rgb(140, 139, 139);
+  flex-shrink: 0;
+  overflow: hidden;
 }
-#Brand #Logo img{
+
+#Brand #Logo img {
   object-fit: cover;
   width: 100%;
   height: 100%;
+}
+
+/* From our Blog */
+#BlogCards {
+  width: 90%;
+  height: 75vh;
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  margin-top: 3rem;
+  overflow-x: auto;
+}
+
+#BlogCards .SingleCard {
+  background-color: #ffffff;
+  width: 33%;
+  flex-shrink: 0;
+  border-radius: 1%;
+  overflow: hidden;
+}
+
+#BlogCards .SingleCard #img {
+  width: 100%;
+  height: 48%;
+  object-fit: contain;
+  background-color: chartreuse;
+  position: relative;
+  overflow: hidden;
+}
+
+#BlogCards .SingleCard #img img {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+#BlogCards .SingleCard #img div {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #0f3a8e;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-size: 12px;
+  z-index: 2;
+  line-height: 100%;
+}
+
+/* Gray Strip */
+#BlogCards .SingleCard #strip {
+  background-color: #e9e9ea;
+  display: flex;
+  justify-content: center;
+  gap: 0.8em;
+  font-size: smaller;
+  padding: 1px 0;
+}
+#BlogCards .SingleCard #strip div {
+  display: flex;
+  gap: 0.35em;
+  align-items: center;
+}
+
+/* Content */
+#BlogCards .SingleCard #text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  padding-top: 0.7em;
+}
+
+#BlogCards .SingleCard #text p {
+  font-size: 12px;
+  padding: 0 15px;
+  text-align: center;
+  margin: 0;
+}
+
+#BlogCards .SingleCard #text h6 {
+  padding: 0 15px;
+  font-weight: 500;
+  text-align: center;
+  margin: 0;
+}
+
+#BlogCards .SingleCard #text div {
+  padding: 0 15px;
+  font-size: 11px;
+  display: flex;
+  gap: 0.3em;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+/* Testimonials */
+#TestimonialCards {
+  width: 90%;
+  height: 40vh;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+#TestimonialCards .TestimonialCard {
+  background-color: #ffffff;
+  width: 33%;
+  flex-shrink: 0;
+  border-radius: 1%;
+  overflow: hidden;
+}
+
+/* Content */
+#TestimonialCards .TestimonialCard #text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+#TestimonialCards .TestimonialCard #text p {
+  font-size: 12px;
+  padding: 0px;
+  text-align: center;
+  margin: 0;
+  font-weight: 500;
+}
+
+#TestimonialCards .TestimonialCard #text h1 {
+  padding: 0;
+  font-weight: 500;
+  text-align: center;
+  color: #dd612e;
+  font-size: 80px;
+  margin: 0;
+}
+
+#TestimonialCards .TestimonialCard #text div {
+  padding: 0 15px;
+  display: flex;
+  gap: 0.3em;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  font-weight: 600;
+  color: gray;
+  font-size: small;
+}
+
+/* Most Viewed */
+.MostViewedContainer {
+  background-color: #3a4855;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.MostViewedContainer .MostViewed {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.MostViewedContainer .MostViewed h6 {
+  color: white;
+  font-size: small;
+  padding-top: 1.5em;
+  margin: 0;
+  font-weight: 500;
+  text-decoration: 1px underline orangered;
+  text-underline-offset: 10px;
+}
+
+.MostViewed #MostViewedCard {
+  background-color: #ffffff;
+  width: 23%;
+  display: flex;
+  margin-top: 0.7em;
+  overflow-x: auto;
+}
+.MostViewed #MostViewedCard #left {
+  width: 25%;
+}
+.MostViewed #MostViewedCard #right {
+  width: 75%;
 }
